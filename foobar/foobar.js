@@ -8,7 +8,15 @@
 
 // NOTE: For testing
     // - export the function that you are interested in testing.
+    // CRUCIAL: exports should be defined after data is declared.
 
+// Old way of exporting data (Common JS)
+// module.exports = {
+//     int,
+//     fooOrBar
+// }
+
+// UPDATED: ES6 way to export the data.
 let int = 9;
 
 function fooOrBar(int) {
@@ -26,3 +34,4 @@ function fooOrBar(int) {
 
 fooOrBar();
 
+export { int, fooOrBar}
