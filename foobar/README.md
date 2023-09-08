@@ -14,3 +14,7 @@ Setup Mocha and Chai
 Create a folder named: test
 Create file named: app.test.spec.js (.spec extention file is optional)
 
+Run command: npm run test
+    -Should expect "0 passing"
+
+Export the function that you would like to select inside the file that it resides in.

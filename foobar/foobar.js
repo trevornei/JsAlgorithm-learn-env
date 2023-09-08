@@ -6,6 +6,9 @@
 // 4. else if both 2. and 3. are truthy, return string FooBar
 // 5. else (int) is not divisible by three or five return the variable storing the integer.
 
+// NOTE: For testing
+    // - export the function that you are interested in testing.
+
 let int = 9;
 
 function fooOrBar(int) {
