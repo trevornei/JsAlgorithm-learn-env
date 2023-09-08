@@ -5,8 +5,9 @@ The foo bar problem is a coding challenge that is often used as an interview que
 // Foo Bar refers to US army lingo that = "Fucked up beyond all recognition."
 
 // 1. Takes an integer as an input.
-// 2. if (int) / 3 return strign foo
-// 3. else if (int) int is / 5 return string bar 
+// 2. if (int) modulus 3 is equal to 0, return strign Foo
+// 3. else if (int) int is modulus 5 is equal to 0 return string Bar 
+// 4. else if both 2. and 3. are truthy, return string FooBar
 // 4. else (int) is not divisible by three or five return the variable storing the integer.
 
 let int = 9;
@@ -16,7 +17,10 @@ function fooOrBar(int) {
         return "Foo";
     } else if (int % 5 === 0) {
         return "Bar";
-    } else {
+    } else if (int % 3 === 0 && int % 5 === 0) {
+        return "FooBar"
+    }
+    else {
         return int;
     }
 }
