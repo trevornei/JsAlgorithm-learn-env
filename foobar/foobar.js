@@ -34,4 +34,4 @@ function fooOrBar(int) {
 
 fooOrBar();
 
-export { int, fooOrBar}
+export { int, fooOrBar};

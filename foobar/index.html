@@ -10,7 +10,13 @@
     <div class="" id="">
         <h2>Foo Bar Algorithm</h2>
     </div>
-    <script src="foobar.js"></script>
-    <script src="chai.js" type="text/javascript"></script>
+    <!--
+        Uncaught SyntaxError: Unexpected token 'export' (at foobar.js:37:1)
+        The type module tells the browser that this file is a JS file.
+        This will fix this console error: 
+        1. Using ES6 Syntax directly in browser can cause problems like the error above.     
+    -->
+    <script type="module" src="foobar.js"></script>
+    <script src="./test/foobar.spec.js" type="text/javascript"></script>
 </body>
 </html>
