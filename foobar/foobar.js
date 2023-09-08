@@ -7,15 +7,15 @@ The foo bar problem is a coding challenge that is often used as an interview que
 // 1. Takes an integer as an input.
 // 2. if (int) / 3 return strign foo
 // 3. else if (int) int is / 5 return string bar 
-// 4. else (int) is not divisible by three or five return string bar.
+// 4. else (int) is not divisible by three or five return the variable storing the integer.
 
-let int = null;
+let int = 9;
 
 if (int % 3 === 0) {
     return "Foo";
 } else if (int % 5 === 0) {
     return "Bar";
 } else {
-    return "Bar";
+    return int;
 }
 
