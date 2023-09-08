@@ -6,6 +6,10 @@ Mocha is a testing library for node.js
 Chai is an assertion library that is used in conjunction with Mocha.
     - Assertion libraries help you verify that code is correct.
 
+What are the benefits of using Chai's BDD vs Assert?
+    - More human readable
+    - Can chain together testing methods.
+
 Setup Mocha and Chai
   Once the dependencies have been installed, jump to the package.json file and edit the "scripts" object.
   Alter the value of test to the string "mocha test".
