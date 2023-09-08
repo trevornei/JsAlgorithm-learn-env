@@ -11,11 +11,15 @@ The foo bar problem is a coding challenge that is often used as an interview que
 
 let int = 9;
 
-if (int % 3 === 0) {
-    return "Foo";
-} else if (int % 5 === 0) {
-    return "Bar";
-} else {
-    return int;
+function fooOrBar(int) {
+    if (int % 3 === 0) {
+        return "Foo";
+    } else if (int % 5 === 0) {
+        return "Bar";
+    } else {
+        return int;
+    }
 }
+
+fooOrBar();
 
