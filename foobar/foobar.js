@@ -17,9 +17,9 @@
 // }
 
 // UPDATED: ES6 way to export the data.
-let int = 9;
+let int = null;
 
-function fooOrBar(int) {
+function fooOrBar() {
     if (int % 3 === 0) {
         return "Foo";
     } else if (int % 5 === 0) {
@@ -32,6 +32,9 @@ function fooOrBar(int) {
     }
 }
 
-fooOrBar();
+console.log(fooOrBar(15));
 
-export { int, fooOrBar};
+module.exports = {
+    int, 
+    fooOrBar
+}
