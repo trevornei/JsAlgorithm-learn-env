@@ -5,8 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing Document for fooOrBar Function</title>
+    <!--Link to the styling via url-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.1.2/mocha.css">
 </head>
 <body>
-    
+    <!--Add a div with the id "mocha"-->
+    <div id="mocha"></div>
+
+    <!--Add script:src for
+            1. Mocha
+            2. Chai
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.1.2/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.4/chai.js"></script>
+
+    <script type="moduel">
+        import { fooOrBar } from 'foobar.js'
+        import '../test/foobar.spec.js'
+    </script>
+    <script src="chai.js" type="text/javascript"></script>
 </body>
 </html>
