@@ -20,11 +20,11 @@
 let int = null;
 
 function fooOrBar() {
-    if (int % 3 === 0) {
+    if (int % 3 === 0 && int % 5 === 0) {
         return "Foo";
-    } else if (int % 5 === 0) {
+    } else if (int % 3 === 0) {
         return "Bar";
-    } else if (int % 3 === 0 && int % 5 === 0) {
+    } else if (int % 5 === 0) {
         return "FooBar"
     }
     else {
@@ -34,7 +34,4 @@ function fooOrBar() {
 
 console.log(fooOrBar(15));
 
-module.exports = {
-    int, 
-    fooOrBar
-}
+export { int, fooOrBar };
