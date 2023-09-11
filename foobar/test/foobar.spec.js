@@ -1,5 +1,2 @@
-var should = require('chai').should()
-
-const myModule = require('../test/foobar')
-console.log(myModule.int)
-console.log(myModule.fooOrBar(9))
+import { should } from 'chai'
+import { int, fooOrBar } from '../foobar'
